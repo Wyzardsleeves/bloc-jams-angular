@@ -1,0 +1,1 @@
+angular.module('blocJams', []);         //declaring angular module
