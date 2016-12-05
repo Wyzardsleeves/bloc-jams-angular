@@ -31,6 +31,11 @@
                     return {width: percentString()};
                 };
                 
+                //assignment-9
+                scope.thumbStyle = function(){
+                    return {left: percentString()};
+                };
+                
                 scope.onClickSeekBar = function(event){
                     var percent = calculatePercent(seekBar, event);
                     scope.value = percent * scope.max;
@@ -42,6 +47,11 @@
                         scope.$apply(function(){
                             scope.value = percent * scope.max;
                         });
+                        /*
+                        scope.$apply(function(){
+                            scope.value = percent * scope.max;
+                        });
+                        */
                     });
                     
                     $document.bind('mouseup.thumb', function(){
@@ -49,6 +59,8 @@
                         $document.unbide('mouseup.thumb');
                     });
                 };
+                
+                
             }
         };
     }
