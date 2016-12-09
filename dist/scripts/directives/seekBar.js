@@ -1,5 +1,5 @@
 (function(){
-    function seekBar(document){
+    function seekBar($document){
         var calculatePercent = function(seekBar, event){
             var offsetX = event.pageX - seekBar.offset().left;
             var seekBarWidth = seekBar.width();
@@ -74,7 +74,7 @@
                     
                     $document.bind('mouseup.thumb', function(){
                         $document.unbind('mousemove.thumb');
-                        $document.unbide('mouseup.thumb');
+                        $document.unbind('mouseup.thumb');
                     });
                 };
             }
